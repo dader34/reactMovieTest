@@ -11,17 +11,17 @@ const routes = [
     errorElement: <ErrorPage />
   },
   {
-    path: "reactMovieTest/directors",
+    path: "/reactMovieTest/directors",
     element: <Directors />,
     errorElement: <ErrorPage />
   },
   {
-    path: "reactMovieTest/actors",
+    path: "/reactMovieTest/actors",
     element: <Actors />,
     errorElement: <ErrorPage />
   },
   {
-    path: "reactMovieTest/movie/:title",
+    path: "/reactMovieTest/movie/:title",
     element: <Movie />,
     errorElement: <ErrorPage />
   }
