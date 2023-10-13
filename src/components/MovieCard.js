@@ -5,7 +5,7 @@ function MovieCard({title}) {
   return (
     <article>
         <h2>{title}</h2>
-        <Link to={`/reactMovieTest/movie/${title}`}>View Info</Link>
+        <Link to={`/movie/${title}`}>View Info</Link>
     </article>
   );
 };

@@ -6,22 +6,22 @@ import ErrorPage from "./pages/ErrorPage";
 
 const routes = [
   {
-    path: "/reactMovieTest",
+    path: "/",
     element: <Home />,
     errorElement: <ErrorPage />
   },
   {
-    path: "/reactMovieTest/directors",
+    path: "/directors",
     element: <Directors />,
     errorElement: <ErrorPage />
   },
   {
-    path: "/reactMovieTest/actors",
+    path: "/actors",
     element: <Actors />,
     errorElement: <ErrorPage />
   },
   {
-    path: "/reactMovieTest/movie/:title",
+    path: "/movie/:title",
     element: <Movie />,
     errorElement: <ErrorPage />
   }
