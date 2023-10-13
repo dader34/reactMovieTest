@@ -1,0 +1,21 @@
+import NavBar from "../components/NavBar";
+import { movies } from "../data";
+import MovieCard from "../components/MovieCard";
+
+function Home() {
+  const allMovies = movies.map(movie => <MovieCard key={movie.title} title={movie.title}/>)
+  
+  return (
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <main>
+        <h1>Home Page</h1>
+        {allMovies}
+      </main>
+    </>
+  );
+};
+
+export default Home;
