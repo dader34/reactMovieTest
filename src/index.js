@@ -1,7 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import "./index.css";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import routes from "./routes";
+import { BrowserRouter, createBrowserRouter,RouterProvider } from 'react-router-dom';
+import routes from './routes';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={createBrowserRouter(routes)}/>);
+const basename = '/reactMovieTest'; // Replace with your repository name
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter basename={basename}>
+    <RouterProvider router={createBrowserRouter(routes)} />
+  </BrowserRouter>
+);
